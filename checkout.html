@@ -1,0 +1,59 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Checkout</title>
+    <link rel="stylesheet" href="style.css">
+</head>
+<body>
+    <header>
+        <h1>Checkout</h1>
+    </header>
+    <nav>
+        <ul>
+            <li><a href="index.html">Home</a></li>
+            <li><a href="products.html">Products</a></li>
+            <li><a href="cart.html">Cart</a></li>
+        </ul>
+    </nav>
+    <main>
+        <h2>Checkout</h2>
+        <form id="checkout-form">
+            <div>
+                <label for="full-name">Full Name:</label>
+                <input type="text" id="full-name" name="full-name" required>
+            </div>
+            <div>
+                <label for="email">Email:</label>
+                <input type="email" id="email" name="email" required>
+            </div>
+            <div>
+                <label for="shipping-address">Shipping Address:</label>
+                <textarea id="shipping-address" name="shipping-address" rows="3" required></textarea>
+            </div>
+            <div>
+                <label for="city">City:</label>
+                <input type="text" id="city" name="city" required>
+            </div>
+            <div>
+                <label for="postal-code">Postal Code:</label>
+                <input type="text" id="postal-code" name="postal-code" required>
+            </div>
+            <div>
+                <label for="country">Country:</label>
+                <input type="text" id="country" name="country" required>
+            </div>
+            <div>
+                <label for="card-number">Card Number (Simulated - Do Not Enter Real Data):</label>
+                <input type="text" id="card-number" name="card-number" placeholder="xxxx-xxxx-xxxx-xxxx">
+            </div>
+            <button type="submit">Place Order</button>
+        </form>
+    </main>
+    <footer>
+        <p>&copy; 2024 Our Store</p>
+    </footer>
+    <script src="js/checkout.js" defer></script>
+</body>
+</html>
